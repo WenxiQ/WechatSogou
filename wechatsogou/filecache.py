@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
-from werkzeug.contrib.cache import FileSystemCache
-
+# from werkzeug.contrib.cache import FileSystemCache
+from cachelib.file import FileSystemCache  # 查找werkzeug.contrib.cache已经无效,改为cachelib.file可用
 
 class WechatCache(FileSystemCache):
     """基于文件的缓存
